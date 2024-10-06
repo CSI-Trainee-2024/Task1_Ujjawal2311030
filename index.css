@@ -1,0 +1,1008 @@
+*{
+    margin: 0px ;
+    padding: 0px;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+.container{
+    height: 100%;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color:#f2f2f2;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+nav{
+    height: 100%;
+    width: 100%;
+    border: 2px solid black;
+    display: flex;
+    background-color:black;
+    position: sticky;
+    cursor: pointer;
+    top: 0;
+    z-index: 100;
+}
+
+.logo_section{
+    height: 100%;
+    width: 30%;
+    color: white;
+    font-size: 30px;
+   font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav_icons{
+    height: 100%;
+    width: 70%;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    display: flex;
+    padding-top: 16px;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.nav_icons a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    position: relative;
+}
+
+.nav_icons a:after{
+    content: "";
+    position: absolute;
+    background-color: gold;
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -10px;
+    transition: 0.3s;
+}
+
+.nav_icons a:hover:after{
+    width: 100%;
+    color: white;
+    text-shadow: 5px 5px 2px white;
+}
+
+@media(max-width:1030px){
+    nav{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+     .nav_icons a{
+        font-size: 25px;
+     }
+
+     .nav_icons{
+        width: 100%;
+     }
+
+     .logo_section{
+        width: 100%;
+     }
+}
+
+.image_section{
+    height: 90vh;
+    width: 100%;
+}
+
+.image_section img{
+    height: 100%;
+    width: 100%;
+}
+
+
+.populer_dishes{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: #eef2e2;
+    margin-top: 30px;
+}
+
+.heading{
+    height: 20%;
+    width: 100%;
+    text-align: center;
+    font-size: 30px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding-top: 50px;
+    text-shadow: 10px 10px 30px black;
+    font-size: 40px;
+}
+
+.dishes{
+    height: 80%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-bottom: 30px;
+
+}
+
+.card{
+    height: 300px;
+    width: 280px;
+    border: 2px solid black;
+    position: relative;
+    box-shadow: 10px 10px 25px black;
+    margin-top: 100px;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+
+
+.up_part{
+    height: 90%;
+    width: 100%;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+.up_part img{
+    height: 100%;
+    width: 100%;
+    transition: all;
+    transition-duration: 0.8s;
+    transition-timing-function: linear;
+    transition-delay: 0s;
+}
+.up_part img:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.down{
+    height: 10%;
+    width: 100%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 25px;
+    background-color: #feffdf   ;
+    text-shadow: 10px 10px 40px black;
+}
+
+.event_section{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: #eef2e2;
+    margin-top: 30px;
+}
+
+.populer_events{
+    height: 80%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.event_card{
+    height: 400px;
+    width: 500px;
+    border: 1px solid black;
+    margin-top: 100px;
+    margin-bottom: 20px;
+    box-shadow: 10px 10px 25px black;
+    overflow: hidden;
+   
+}
+
+
+.event_card img{
+    height: 100%;
+    width: 100%;
+    transition: all 0.8s linear 0s;
+    object-fit:cover ;
+}
+
+.event_card img:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.About_section{
+    height: 100%;
+    width: 100%;
+    background-color: #eef2e2;
+    margin-top: 30px;
+    overflow: hidden;
+}
+
+.about_us{
+    height: 80%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+     justify-content: space-around;
+     margin-bottom: 20px;
+}
+
+.about_card{
+    height: 420px;
+    width: 480px;
+    border: 1px solid black;
+    box-shadow: 10px 10px 25px black;
+    margin-top: 100px;
+   object-fit: cover;
+   overflow: hidden;
+   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+    
+}
+
+.chef_detail{
+    padding-top: 10px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.chef_image img{
+    overflow: hidden;
+}
+
+.chef_image{
+    height: 70%;
+    width: 100%;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+
+
+.chef_image img{
+    height: 100%;
+    width: 100%;
+    transition: all 0.8s linear 0s;
+}
+
+.chef_image img:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.hotel_image{
+    height: 100%;
+    width: 100%;
+    background-color: #eef2e2;
+    margin-top: 30px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+}
+
+.himage{
+    height: 600px;
+    width: 800px ;
+ 
+}
+
+.himage img{
+    height: 100%;
+    width: 100%;
+    padding: 30px;
+    border-radius: 10px;
+    opacity: 0.9;
+    transition: all 0.5s linear 0s;
+}
+.himage img:hover{
+    opacity: 1;
+}
+
+.hotel{
+    height: 200px;
+    width: 300px;
+    font-size: 30px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+
+.footer_image{
+    height: 40vh;
+    width: 100vw;
+    margin-top: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.more_info{
+    height: 100%;
+    width: 80%;
+    border: 2px solid rgb(129, 129, 129);
+    border-radius: 10px;
+    background-color: rgb(187, 186, 186);
+}
+.more_details{
+    padding-top: 50px;
+    text-align: center;
+}
+
+#h1{
+    text-align: center;
+    padding-top: 30px;
+}
+
+
+
+
+footer{
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    margin-top: 30px;
+}
+
+.upper_footer{
+    height: 85%;
+    width: 100%;
+    display: flex;
+}
+
+.lower_footer{
+    height: 15%;
+    width: 100%;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     padding: 30px;
+}
+
+.left_footer{
+    height: 300px;
+    width: 33.33%;
+    display: flex;
+    justify-content: center;
+     padding-top: 30px;
+     padding-left: 30px;
+    font-size: 18px;
+    color: white;
+   
+}
+
+ul li{
+
+    list-style-type: none;
+}
+
+#li1{
+    margin-top: 15px;
+    margin-bottom: 30px;
+}
+
+#list1{
+    margin-bottom: 50px;
+}
+.middle_footer{
+    height: 300px;
+    width: 33.33%;
+    display: flex;
+    justify-content:center;
+    padding-top: 30px;
+    padding-left: 30px;
+    font-size: 18px;
+    color: white;
+
+}
+
+.right_footer{
+    height: 100%;
+    width: 33.33%;
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+    color: white;
+   
+}
+
+.main_icons{
+    height: 40px;
+    width: 30%;
+    display: flex;
+   
+}
+
+.left_main{
+    height: 100%;
+    width: 33.33%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.left_main img{
+    height: 80%;
+    width: 30%;
+}
+
+.middle_main{
+    height: 100%;
+    width: 33.33%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.middle_main img{
+    height: 80%;
+    width: 30%;
+}
+
+.right_main{
+    height: 100%;
+    width: 33.33%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.right_main img{
+    height: 80%;
+    width: 30%;
+}
+
+@media(max-width:1030px){
+       .image_section{
+        height: 70vh;
+        width: 100vw;
+       }
+
+       .dishes{
+        flex-direction: column;
+       }
+       #card2{
+        margin-top: 80px;
+       }
+      .populer_events{
+        flex-direction: column;
+      }
+
+      .event_card{
+        height: 300px;
+        width: 60%;
+      }
+
+      .about_us{
+        flex-direction: column;
+      }
+      #abcard3{
+        margin-bottom: 30px;
+      }
+
+      .hotel_image{
+        flex-direction: column;
+      }
+
+      .upper_footer{
+        flex-direction: column;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      footer{
+        height: 100%;
+      }
+
+      .left_main img{
+        height: 90%;
+        width: 80%;
+      }
+
+      .middle_main img{
+        height: 90%;
+        width: 80%;
+      }
+
+      .right_main img{
+        height: 90%;
+        width: 80%;
+      }
+
+      #h1{
+        padding-top: 0;
+      }
+      .more_details{
+        padding-top: 5px;
+      }
+
+      .form{
+        width: 90%;
+      }
+}
+
+
+
+@media(max-width:1337px){
+    .image_section{
+     height: 70vh;
+     width: 100vw;
+    }
+
+    .dishes{
+     flex-direction: column;
+    }
+    #card2{
+     margin-top: 80px;
+    }
+   .populer_events{
+     flex-direction: column;
+   }
+
+   .event_card{
+     height: 300px;
+     width: 60%;
+   }
+
+   .about_us{
+     flex-direction: column;
+   }
+   #abcard3{
+     margin-bottom: 30px;
+   }
+
+   .hotel_image{
+     flex-direction: column;
+   }
+
+   .upper_footer{
+     flex-direction: column;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+   }
+   footer{
+     height: 100%;
+   }
+
+   .left_main img{
+     height: 90%;
+     width: 80%;
+   }
+
+   .middle_main img{
+     height: 90%;
+     width: 80%;
+   }
+
+   .right_main img{
+     height: 90%;
+     width: 80%;
+   }
+
+   .footer_image{
+    height: 20vh;
+   }
+}
+
+
+
+
+@media(max-width:431px){
+    .image_section{
+        height: 60vh;
+    }
+    .event_card{
+        height: 300px;
+        width: 60%;
+    }
+    .about_card{
+        height: 300px;
+        width: 100%;
+    }
+
+    .card{
+        height: 300px;
+        width: 90%;
+    }
+
+    .left_main img{
+        height: 100%;
+        width: 80%;
+    }
+
+    .middle_main img{
+        height: 100%;
+        width: 80%;
+    }
+
+    .right_main img{
+        height: 100%;
+        width: 80%;
+    }
+
+    .form{
+        padding: 0px;
+        height: 100%;
+        margin-top: 0;
+    }
+
+    .chef_image{
+        height: 60%;
+    }
+
+    .chef_detail{
+        height: 40%;
+    }
+
+    .footer_image{
+        height: 100%;
+    }
+}
+
+
+
+
+.dining_area{
+    height: 70vh;
+    width: 100vw;
+}
+.dining_area img{
+    height: 100%;
+    width: 100%;
+    
+}
+
+.startars_section{
+    height: 100%;
+    width: 95%;
+    background-color:#eef2e2;
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+}
+
+.startar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 80px;
+}
+
+.startar_card{
+    height: 350px;
+    width: 350px;
+    border: 1px solid black;
+    box-shadow: 5px 5px 25px black;
+    overflow: hidden;
+    border-radius: 20px;
+}
+
+.startar_image{
+    height: 80%;
+    width: 100%;
+   overflow: hidden;
+}
+
+.startar_image img{
+    height: 100%;
+    width: 100%;
+    transition: all 0.5s linear 0s;
+}
+
+.startar_image img:hover{
+    transform: scale(1.1);
+}
+
+.srartar_details{
+    height: 20%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+   font-size: 20px;
+   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+   background-color: #feffdf;
+
+}
+
+
+.maincourse_section{
+
+    height: 100%;
+    width: 95%;
+    background-color:#eef2e2;
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+
+}
+
+.breads_section{
+    height: 100%;
+    width: 95%;
+    background-color:#eef2e2;
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+}
+
+.drinks_section{
+    height: 100%;
+    width: 95%;
+    background-color:#eef2e2;
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+}
+
+@media(max-width:1025px){
+
+ .startar{
+    flex-direction: column;
+    gap: 50px;
+ }
+.dining_area{
+    height: 40vh;
+
+}
+.form{
+    width: 90%;
+}
+
+.upper_section{
+    flex-direction: column;
+    gap: 20px;
+}
+.music_events{
+    gap: 20px;
+}
+
+
+.lower_section{
+    flex-direction: column;
+    gap: 20px;
+}
+.gallary_section{
+    height: 100%;
+}
+
+
+}
+
+@media(max-width:821px){
+    .form{
+        width: 100vw;
+    }
+}
+
+
+
+
+.gallary_section{
+    height: 100%;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.music_events{
+    height: 100%;
+    width: 70%;
+  
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px; 
+   padding: 20px;
+}
+
+.upper_section{
+    height: 50%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.lower_section{
+    height: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 20px;
+}
+
+
+.showcase_card{
+    height:300px ;
+    width: 280px;
+    border: 3px solid white;
+    
+    overflow: hidden;
+    
+}
+
+
+.showcase_card img{
+    height: 100%;
+    width: 100%;
+    
+}
+
+ 
+ .form_section{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+ 
+    font-size: 30px;
+}
+
+.form{
+    height: 95%;
+    width: 50vw;
+    border: 1px solid black;
+    margin-top: 40px;
+
+    border-radius: 20px;
+    padding: 50px;
+    background-color: #118a7e;
+    color: white;
+    font-weight: 700;
+}
+
+
+
+#name{
+    font-size: 20px;
+    width: 50%;
+    border: 2px solid black;
+}
+
+#lastname{
+    font-size: 20px;
+    margin-left: 20px;
+    border: 2px solid black;
+    width: 45%;
+}
+
+#email{
+    font-size: 20px;
+    width: 50%;
+    border: 2px solid black;
+}
+
+#phone{
+    font-size: 20px;
+    width: 50%;
+    border: 2px solid black;
+}
+
+#date{
+    font-size: 20px;
+    width: 50%;
+    border: 2px solid black;
+
+}
+
+#time{
+    font-size: 20px;
+    width: 50%;
+    border: 2px solid black;
+}
+
+#btn{
+    text-align: center;
+    margin-left: 350px;
+    height: 30px;
+    width: 80px;
+    border-radius: 20px;
+    font-size: 18px;
+    background-color: rgb(219, 140, 83);
+    border: 1px solid black;
+} 
+
+@media(max-width:1025px){
+    .form{
+        height: 65%;
+        padding-top: 70px;
+        overflow: hidden;
+        margin-top: 170px;
+    }
+
+    #lastname{
+        margin-left: 0;
+    }
+
+    #btn{
+        margin-left: 230px;
+    }
+
+    
+}
+
+@media(max-width:431px){
+    .form{
+        padding: 15px;
+        height: 80%;
+        margin-top:80px;
+        width: 95%;
+    }
+
+    #email{
+        width: 80%;
+    }
+    #phone{
+        width: 80%;
+    }
+    #date{
+        width: 80%;
+    }
+    #time{
+        width: 80%;
+    }
+
+    #btn{
+        margin-left: 140px;
+    }
+    
+}
+
+@media(max-width:916px){
+    .middle_footer{
+        padding-top: 80px;
+    }
+}
+
+@media(max-width:376px){
+    .form{
+        height: 95%;
+        margin-top: 25px;
+        font-size: 20px;
+        padding-top: 60px;
+    }
+
+    .middle_footer{
+        margin-top: 20px;
+        padding-left: 50px;
+    }
+
+    .right_footer{
+       padding-left: 30px;
+    }
+}
+
+.table_section{
+    margin-top: 40px;
+}
+
+table tr td{
+    height: 100px;
+    width: 200px;
+    text-align: center;
+    font-size: 20px;
+    border: 2px solid black;
+    background-color:#bc2525;
+    color: white;
+    font-weight: 700;
+}
+
+.av{
+    background-color:#7dd87d;
+}
